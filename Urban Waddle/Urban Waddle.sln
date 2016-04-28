@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urban Waddle.CSharp.Plugins", "Urban Waddle.CSharp.Plugins.csproj", "{B703D659-078F-811B-F6EE-208778E85CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urban Waddle.CSharp", "Urban Waddle.CSharp.csproj", "{8B14798D-3264-D11D-9502-B734BF3FA284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urban Waddle.CSharp.Editor", "Urban Waddle.CSharp.Editor.csproj", "{B6B4C471-F172-9AB7-FB8D-D0673E430368}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B703D659-078F-811B-F6EE-208778E85CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B703D659-078F-811B-F6EE-208778E85CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B703D659-078F-811B-F6EE-208778E85CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B703D659-078F-811B-F6EE-208778E85CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B14798D-3264-D11D-9502-B734BF3FA284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B14798D-3264-D11D-9502-B734BF3FA284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B14798D-3264-D11D-9502-B734BF3FA284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B14798D-3264-D11D-9502-B734BF3FA284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B4C471-F172-9AB7-FB8D-D0673E430368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B4C471-F172-9AB7-FB8D-D0673E430368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B4C471-F172-9AB7-FB8D-D0673E430368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B4C471-F172-9AB7-FB8D-D0673E430368}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
