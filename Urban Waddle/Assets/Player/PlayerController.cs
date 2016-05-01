@@ -48,7 +48,9 @@ public class PlayerController : MonoBehaviour {
     void FixedUpdate () {
         Vector3 moveDirection = Vector3.zero;
 
-        moveDirection = new Vector3(speed * Input.GetAxis("Horizontal"), 0.0f, speed * Input.GetAxis("Vertical"));
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        moveDirection.Normalize();  // prevent the "Doom diagonal speed boost"
+        moveDirection *= speed;
 
         if (c.isGrounded)
         {
