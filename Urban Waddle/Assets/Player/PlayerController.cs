@@ -40,9 +40,9 @@ public class PlayerController : MonoBehaviour {
         Quaternion rotation = Quaternion.LookRotation(lookDir - gameObject.transform.position);
         gameObject.transform.rotation = rotation;
 
-        cam.transform.position = c.transform.position + new Vector3(0.0f, camHeight, -camDistance);
+        cam.transform.position = gameObject.transform.position + new Vector3(0.0f, camHeight, -camDistance);
         cam.transform.rotation = Quaternion.LookRotation(c.transform.position - cam.transform.position);
-        cam.transform.position += (1 / camDriftFraction) * lookDir;
+        cam.transform.position += (1 / camDriftFraction) * (lookDir - gameObject.transform.position);
     }
 
     void FixedUpdate () {
