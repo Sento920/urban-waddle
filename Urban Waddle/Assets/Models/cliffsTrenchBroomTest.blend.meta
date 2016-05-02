@@ -312,6 +312,67 @@ ModelImporter:
     4300116: entity0_brush38
     4300118: entity0_brush35
     4300120: entity0_brush31
+    6400000: entity0_brush0
+    6400002: entity0_brush1
+    6400004: entity0_brush10
+    6400006: entity0_brush11
+    6400008: entity0_brush12
+    6400010: entity0_brush13
+    6400012: entity0_brush14
+    6400014: entity0_brush15
+    6400016: entity0_brush16
+    6400018: entity0_brush17
+    6400020: entity0_brush18
+    6400022: entity0_brush19
+    6400024: entity0_brush2
+    6400026: entity0_brush20
+    6400028: entity0_brush21
+    6400030: entity0_brush22
+    6400032: entity0_brush23
+    6400034: entity0_brush24
+    6400036: entity0_brush25
+    6400038: entity0_brush26
+    6400040: entity0_brush27
+    6400042: entity0_brush28
+    6400044: entity0_brush29
+    6400046: entity0_brush3
+    6400048: entity0_brush30
+    6400050: entity0_brush31
+    6400052: entity0_brush32
+    6400054: entity0_brush33
+    6400056: entity0_brush34
+    6400058: entity0_brush35
+    6400060: entity0_brush36
+    6400062: entity0_brush37
+    6400064: entity0_brush38
+    6400066: entity0_brush39
+    6400068: entity0_brush4
+    6400070: entity0_brush40
+    6400072: entity0_brush41
+    6400074: entity0_brush42
+    6400076: entity0_brush43
+    6400078: entity0_brush44
+    6400080: entity0_brush45
+    6400082: entity0_brush46
+    6400084: entity0_brush47
+    6400086: entity0_brush48
+    6400088: entity0_brush49
+    6400090: entity0_brush5
+    6400092: entity0_brush50
+    6400094: entity0_brush51
+    6400096: entity0_brush52
+    6400098: entity0_brush53
+    6400100: entity0_brush54
+    6400102: entity0_brush55
+    6400104: entity0_brush56
+    6400106: entity0_brush57
+    6400108: entity0_brush58
+    6400110: entity0_brush59
+    6400112: entity0_brush6
+    6400114: entity0_brush60
+    6400116: entity0_brush7
+    6400118: entity0_brush8
+    6400120: entity0_brush9
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -340,10 +401,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

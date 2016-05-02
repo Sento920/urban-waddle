@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
             }
         }
         if (isDashing == true) {
-            moveDirection *= dashPower;
+           moveDirection += c.transform.forward * dashPower;
             dashTimer++;
             if (dashTimer >= dashTime)
                 isDashing = false;
@@ -76,6 +76,7 @@ public class PlayerController : MonoBehaviour {
         moveDirection.y -= gravity;
 
         moveDirection *= Time.fixedDeltaTime;
+        //moveDirection *= Time.deltaTime;
 
         c.Move(moveDirection);
 	}
