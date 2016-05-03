@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour {
     private bool isDashing = false; // me irl :(
     private bool dashHeld = false;  // to prevent holding dash repeatedly dashing
 
+	public WeaponBase weapon;
+
     // Use this for initialization
     void Start () {
         c = GetComponent<CharacterController>();
@@ -43,6 +45,11 @@ public class PlayerController : MonoBehaviour {
         cam.transform.position = gameObject.transform.position + new Vector3(0.0f, camHeight, -camDistance);
         cam.transform.rotation = Quaternion.LookRotation(c.transform.position - cam.transform.position);
         cam.transform.position += (1 / camDriftFraction) * (lookDir - gameObject.transform.position);
+
+		// weapon stuff
+		if (Input.GetButton("Fire1") && weapon != null) {
+			weapon.fire (gameObject.transform.forward);
+		}
     }
 
     void FixedUpdate () {
@@ -79,5 +86,9 @@ public class PlayerController : MonoBehaviour {
         //moveDirection *= Time.deltaTime;
 
         c.Move(moveDirection);
+	}
+
+	void SetWeapon(WeaponBase weapon) {
+		this.weapon = weapon;
 	}
 }
