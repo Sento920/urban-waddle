@@ -32,6 +32,25 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
     void Update () {
+        Vector3 moveDirection = Vector3.zero;
+
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+
+        // prevent the "Doom diagonal speed boost"
+        if (moveDirection.magnitude > Vector3.Normalize(moveDirection).magnitude)
+            moveDirection.Normalize();
+
+        moveDirection *= speed;
+
+        if (isDashing == true)
+            moveDirection += c.transform.forward * dashPower;
+
+        moveDirection.y -= gravity;
+
+        moveDirection *= Time.deltaTime;
+
+        c.Move(moveDirection);
+
         // aiming things!
 
         // get vector of pointer at character's y pos
@@ -53,15 +72,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     void FixedUpdate () {
-        Vector3 moveDirection = Vector3.zero;
-
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-        moveDirection.Normalize();  // prevent the "Doom diagonal speed boost"
-        moveDirection *= speed;
-
-        if (c.isGrounded)
-        {
-            if (dashTimer >= dashChargeTime && Input.GetButton("Jump") && canDash && !dashHeld) {
+        if (c.isGrounded) {
+            if (dashTimer >= dashChargeTime && Input.GetButton("Jump") && canDash && !dashHeld)
+            {
                 // experimental dash
                 isDashing = true;
                 dashTimer = 0.0f;
@@ -69,7 +82,6 @@ public class PlayerController : MonoBehaviour {
             }
         }
         if (isDashing == true) {
-           moveDirection += c.transform.forward * dashPower;
             dashTimer++;
             if (dashTimer >= dashTime)
                 isDashing = false;
@@ -79,14 +91,7 @@ public class PlayerController : MonoBehaviour {
 
         if (dashTimer >= dashTime + dashChargeTime && !Input.GetButton("Jump"))
             dashHeld = false;
-
-        moveDirection.y -= gravity;
-
-        moveDirection *= Time.fixedDeltaTime;
-        //moveDirection *= Time.deltaTime;
-
-        c.Move(moveDirection);
-	}
+    }
 
 	void SetWeapon(WeaponBase weapon) {
 		this.weapon = weapon;

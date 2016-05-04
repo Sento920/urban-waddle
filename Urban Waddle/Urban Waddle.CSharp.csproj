@@ -70,6 +70,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Player\PlayerController.cs" />
+    <Compile Include="Assets\WeaponBase.cs" />
+    <Compile Include="Assets\WeaponTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
