@@ -21,13 +21,15 @@ public class PlayerController : MonoBehaviour {
     private bool isDashing = false; // me irl :(
     private bool dashHeld = false;  // to prevent holding dash repeatedly dashing
 
-	public WeaponBase weapon;
+	public GameObject weapon = null;    // why does this need to be a gameobject why does this need to be a gameobject why does this need to be a gameobject
 
     // Use this for initialization
     void Start () {
         c = GetComponent<CharacterController>();
         //cam = GetComponent<Camera>();
         dashTimer = dashTime;
+
+        //weapon = gameObject.AddComponent<WeaponTest>();
     }
 	
 	// Update is called once per frame
@@ -67,7 +69,8 @@ public class PlayerController : MonoBehaviour {
 
 		// weapon stuff
 		if (Input.GetButton("Fire1") && weapon != null) {
-			weapon.fire (gameObject.transform.forward);
+			weapon.GetComponent<WeaponBase>().Fire (gameObject.transform.position, gameObject.transform.forward);
+            weapon = null;
 		}
     }
 
@@ -93,7 +96,11 @@ public class PlayerController : MonoBehaviour {
             dashHeld = false;
     }
 
-	void SetWeapon(WeaponBase weapon) {
+	public void SetWeapon(GameObject weapon) {
 		this.weapon = weapon;
 	}
+
+    public GameObject GetWeapon() {
+        return weapon;
+    }
 }

@@ -70,8 +70,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Player\PlayerController.cs" />
-    <Compile Include="Assets\WeaponBase.cs" />
-    <Compile Include="Assets\WeaponTest.cs" />
+    <Compile Include="Assets\Weapons\ProjectileController.cs" />
+    <Compile Include="Assets\Weapons\WeaponBase.cs" />
+    <Compile Include="Assets\Weapons\WeaponSpawnerController.cs" />
+    <Compile Include="Assets\Weapons\WeaponTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
