@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Player\PlayerController.cs" />
+    <Compile Include="Assets\Player\SetUpPlayer.cs" />
     <Compile Include="Assets\Weapons\ProjectileController.cs" />
     <Compile Include="Assets\Weapons\WeaponBase.cs" />
     <Compile Include="Assets\Weapons\WeaponSpawnerController.cs" />
