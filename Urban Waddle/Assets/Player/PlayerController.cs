@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour {
 	public GameObject holder;	// holds the weapon model
 	public GameObject reticle;	// used for projectile origin
 
+	private GameObject weaponModel = null;	// our held weapon
+
     // Use this for initialization
     void Start () {
         c = GetComponent<CharacterController>();
@@ -75,14 +77,14 @@ public class PlayerController : MonoBehaviour {
 		}
 		if (weapon != null && weapon.GetComponent<WeaponBase>().isEmpty()) {
 			Destroy (weapon);
+			Destroy (weaponModel);
 			weapon = null;	// maybe drop the weapon?
 		}
     }
 
     void FixedUpdate () {
         if (c.isGrounded) {
-            if (dashTimer >= dashChargeTime && Input.GetButton("Jump") && canDash && !dashHeld)
-            {
+            if (dashTimer >= dashChargeTime && Input.GetButton("Jump") && canDash && !dashHeld) {
                 // experimental dash
                 isDashing = true;
                 dashTimer = 0.0f;
@@ -103,6 +105,8 @@ public class PlayerController : MonoBehaviour {
 
 	public void SetWeapon(GameObject weapon) {
 		this.weapon = Instantiate(weapon);
+		weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
+		weaponModel.transform.parent = holder.transform;
 	}
 
     public GameObject GetWeapon() {
