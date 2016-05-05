@@ -27,11 +27,14 @@ public class PlayerController : MonoBehaviour {
 
 	private GameObject weaponModel = null;	// our held weapon
 
+    private Vector3 dashDir;    // the last move direction, for dashes and looking
+
     // Use this for initialization
     void Start () {
         c = GetComponent<CharacterController>();
         //cam = GetComponent<Camera>();
         dashTimer = dashTime;
+        reticle.SetActive(false);
 
         //weapon = gameObject.AddComponent<WeaponTest>();
     }
@@ -48,10 +51,16 @@ public class PlayerController : MonoBehaviour {
 
         moveDirection *= speed;
 
-        if (isDashing == true)
-            moveDirection += c.transform.forward * dashPower;
+        if (!isDashing && moveDirection.magnitude != 0.0f)
+            dashDir = Vector3.Normalize(moveDirection);
+        else if (!isDashing)
+            dashDir = transform.forward;
 
-        moveDirection.y -= gravity;
+        if (isDashing)
+            moveDirection = dashDir * dashPower;
+        else 
+            moveDirection.y -= gravity;
+
 
         moveDirection *= Time.deltaTime;
 
@@ -64,8 +73,14 @@ public class PlayerController : MonoBehaviour {
         float dist = (ray.origin.y - c.transform.position.y);
         Vector3 lookDir = ray.origin + ((-dist / ray.direction.y) * ray.direction);
 
-        Quaternion rotation = Quaternion.LookRotation(lookDir - gameObject.transform.position);
-        gameObject.transform.rotation = rotation;
+        Quaternion rotation;
+
+        if (!isDashing)
+            rotation = Quaternion.LookRotation(lookDir - gameObject.transform.position);
+        else
+            rotation = Quaternion.LookRotation(dashDir);
+
+        gameObject.transform.rotation = rotation;   // if holding a weapon, take aim
 
         cam.transform.position = gameObject.transform.position + new Vector3(0.0f, camHeight, -camDistance);
         cam.transform.rotation = Quaternion.LookRotation(c.transform.position - cam.transform.position);
@@ -79,6 +94,7 @@ public class PlayerController : MonoBehaviour {
 			Destroy (weapon);
 			Destroy (weaponModel);
 			weapon = null;	// maybe drop the weapon?
+            reticle.SetActive(false);
 		}
     }
 
@@ -107,6 +123,7 @@ public class PlayerController : MonoBehaviour {
 		this.weapon = Instantiate(weapon);
 		weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
 		weaponModel.transform.parent = holder.transform;
+        reticle.SetActive(true);
 	}
 
     public GameObject GetWeapon() {
