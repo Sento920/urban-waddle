@@ -4,7 +4,9 @@ using System.Collections;
 public class WeaponTest : MonoBehaviour, WeaponBase {
 
     public GameObject projectile;
-    [SerializeField] private Mesh mesh;
+    [SerializeField] private GameObject mesh;
+
+	private int ammo = 5;
 
     public float speed = 5.0f;
 
@@ -14,7 +16,7 @@ public class WeaponTest : MonoBehaviour, WeaponBase {
 		return type;
 	}
 
-    public Mesh GetMesh() {
+    public GameObject GetMesh() {
         return mesh;
     }
 
@@ -22,9 +24,14 @@ public class WeaponTest : MonoBehaviour, WeaponBase {
         GameObject bullet = (GameObject)Instantiate(projectile, origin, Quaternion.LookRotation(dir));
         bullet.GetComponent<ProjectileController>().Fire(dir, speed);
         //bullet.GetComponent<Rigidbody>().AddForce(dir * 50.0f);
+		ammo--;
 	}
 
     public string GetWeaponName() {
         return "Test";
     }
+
+	public bool isEmpty() {
+		return (ammo < 1);
+	}
 }

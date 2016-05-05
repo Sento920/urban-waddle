@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour {
     private bool dashHeld = false;  // to prevent holding dash repeatedly dashing
 
 	public GameObject weapon = null;    // why does this need to be a gameobject why does this need to be a gameobject why does this need to be a gameobject
+	public GameObject holder;	// holds the weapon model
+	public GameObject reticle;	// used for projectile origin
 
     // Use this for initialization
     void Start () {
@@ -69,8 +71,11 @@ public class PlayerController : MonoBehaviour {
 
 		// weapon stuff
 		if (Input.GetButton("Fire1") && weapon != null) {
-			weapon.GetComponent<WeaponBase>().Fire (gameObject.transform.position, gameObject.transform.forward);
-            weapon = null;
+			weapon.GetComponent<WeaponBase>().Fire (reticle.transform.position, gameObject.transform.forward);
+		}
+		if (weapon != null && weapon.GetComponent<WeaponBase>().isEmpty()) {
+			Destroy (weapon);
+			weapon = null;	// maybe drop the weapon?
 		}
     }
 
@@ -97,7 +102,7 @@ public class PlayerController : MonoBehaviour {
     }
 
 	public void SetWeapon(GameObject weapon) {
-		this.weapon = weapon;
+		this.weapon = Instantiate(weapon);
 	}
 
     public GameObject GetWeapon() {
