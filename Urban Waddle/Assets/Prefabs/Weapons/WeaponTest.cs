@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class WeaponTest : MonoBehaviour, WeaponBase {
+public class WeaponTest : NetworkBehaviour, WeaponBase {
 
     public GameObject projectile;
     [SerializeField] private GameObject mesh;
@@ -20,11 +21,13 @@ public class WeaponTest : MonoBehaviour, WeaponBase {
         return mesh;
     }
 
-	public void Fire(Vector3 origin, Vector3 dir) {
+    [Command]
+	public void CmdFire(Vector3 origin, Vector3 dir) {
         GameObject bullet = (GameObject)Instantiate(projectile, origin, Quaternion.LookRotation(dir));
         bullet.GetComponent<ProjectileController>().Fire(dir, speed);
         //bullet.GetComponent<Rigidbody>().AddForce(dir * 50.0f);
 		ammo--;
+        NetworkServer.Spawn(bullet);
 	}
 
     public string GetWeaponName() {

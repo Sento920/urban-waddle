@@ -87,8 +87,8 @@ public class PlayerController : MonoBehaviour {
         cam.transform.position += (1 / camDriftFraction) * (lookDir - gameObject.transform.position);
 
 		// weapon stuff
-		if (Input.GetButton("Fire1") && weapon != null) {
-			weapon.GetComponent<WeaponBase>().Fire (reticle.transform.position, gameObject.transform.forward);
+		if (Input.GetButtonDown("Fire1") && weapon != null) {
+			weapon.GetComponent<WeaponBase>().CmdFire (reticle.transform.position, gameObject.transform.forward);
 		}
 		if (weapon != null && weapon.GetComponent<WeaponBase>().isEmpty()) {
 			Destroy (weapon);
