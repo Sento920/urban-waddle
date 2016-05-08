@@ -12,5 +12,4 @@ public class SetUpPlayer : NetworkBehaviour {
             GetComponentInChildren<CharacterController>().enabled = true;
         }
 	}
-	
 }
