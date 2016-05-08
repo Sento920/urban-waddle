@@ -32,92 +32,97 @@ public class PlayerController : NetworkBehaviour {
 
     // Use this for initialization
     void Start () {
-        c = GetComponent<CharacterController>();
-        //cam = GetComponent<Camera>();
-        dashTimer = dashTime;
-        reticle.SetActive(false);
+		if (isLocalPlayer) {
+       		c = GetComponent<CharacterController>();
+        	//cam = GetComponent<Camera>();
+        	dashTimer = dashTime;
+        	reticle.SetActive(false);
 
-        //weapon = gameObject.AddComponent<WeaponTest>();
+        	//weapon = gameObject.AddComponent<WeaponTest>();
+		}
     }
 	
 	// Update is called once per frame
     void Update () {
-        Vector3 moveDirection = Vector3.zero;
+		if (isLocalPlayer) {
+			Vector3 moveDirection = Vector3.zero;
 
-        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+			moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
 
-        // prevent the "Doom diagonal speed boost"
-        if (moveDirection.magnitude > Vector3.Normalize(moveDirection).magnitude)
-            moveDirection.Normalize();
+			// prevent the "Doom diagonal speed boost"
+			if (moveDirection.magnitude > Vector3.Normalize (moveDirection).magnitude)
+				moveDirection.Normalize ();
 
-        moveDirection *= speed;
+			moveDirection *= speed;
 
-        if (!isDashing && moveDirection.magnitude != 0.0f)
-            dashDir = Vector3.Normalize(moveDirection);
-        else if (!isDashing)
-            dashDir = transform.forward;
+			if (!isDashing && moveDirection.magnitude != 0.0f)
+				dashDir = Vector3.Normalize (moveDirection);
+			else if (!isDashing)
+				dashDir = transform.forward;
 
-        if (isDashing)
-            moveDirection = dashDir * dashPower;
-        else 
-            moveDirection.y -= gravity;
+			if (isDashing)
+				moveDirection = dashDir * dashPower;
+			else
+				moveDirection.y -= gravity;
 
 
-        moveDirection *= Time.deltaTime;
+			moveDirection *= Time.deltaTime;
 
-        c.Move(moveDirection);
+			c.Move (moveDirection);
 
-        // aiming things!
+			// aiming things!
 
-        // get vector of pointer at character's y pos
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        float dist = (ray.origin.y - c.transform.position.y);
-        Vector3 lookDir = ray.origin + ((-dist / ray.direction.y) * ray.direction);
+			// get vector of pointer at character's y pos
+			Ray ray = cam.ScreenPointToRay (Input.mousePosition);
+			float dist = (ray.origin.y - c.transform.position.y);
+			Vector3 lookDir = ray.origin + ((-dist / ray.direction.y) * ray.direction);
 
-        Quaternion rotation;
+			Quaternion rotation;
 
-        if (!isDashing)
-            rotation = Quaternion.LookRotation(lookDir - gameObject.transform.position);
-        else
-            rotation = Quaternion.LookRotation(dashDir);
+			if (!isDashing)
+				rotation = Quaternion.LookRotation (lookDir - gameObject.transform.position);
+			else
+				rotation = Quaternion.LookRotation (dashDir);
 
-        gameObject.transform.rotation = rotation;   // if holding a weapon, take aim
+			gameObject.transform.rotation = rotation;   // if holding a weapon, take aim
 
-        cam.transform.position = gameObject.transform.position + new Vector3(0.0f, camHeight, -camDistance);
-        cam.transform.rotation = Quaternion.LookRotation(c.transform.position - cam.transform.position);
-        cam.transform.position += (1 / camDriftFraction) * (lookDir - gameObject.transform.position);
+			cam.transform.position = gameObject.transform.position + new Vector3 (0.0f, camHeight, -camDistance);
+			cam.transform.rotation = Quaternion.LookRotation (c.transform.position - cam.transform.position);
+			cam.transform.position += (1 / camDriftFraction) * (lookDir - gameObject.transform.position);
 
-		// weapon stuff
-		if (Input.GetButtonDown("Fire1") && weapon != null) {
-			weapon.GetComponent<WeaponBase>().CmdFire (reticle.transform.position, gameObject.transform.forward);
-		}
-		if (weapon != null && weapon.GetComponent<WeaponBase>().isEmpty()) {
-			Destroy (weapon);
-			Destroy (weaponModel);
-			weapon = null;	// maybe drop the weapon?
-            reticle.SetActive(false);
+			// weapon stuff
+			if (Input.GetButtonDown ("Fire1") && weapon != null) {
+				weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
+			}
+			if (weapon != null && weapon.GetComponent<WeaponBase> ().isEmpty ()) {
+				Destroy (weapon);
+				Destroy (weaponModel);
+				weapon = null;	// maybe drop the weapon?
+				reticle.SetActive (false);
+			}
 		}
     }
 
     void FixedUpdate () {
-        if (c.isGrounded) {
-            if (dashTimer >= dashChargeTime && Input.GetButton("Jump") && canDash && !dashHeld) {
-                // experimental dash
-                isDashing = true;
-                dashTimer = 0.0f;
-                dashHeld = true;
-            }
-        }
-        if (isDashing == true) {
-            dashTimer++;
-            if (dashTimer >= dashTime)
-                isDashing = false;
-        }
-        else if (dashTimer <= dashTime + dashChargeTime)
-            dashTimer++;
+		if (isLocalPlayer) {
+			if (c.isGrounded) {
+				if (dashTimer >= dashChargeTime && Input.GetButton ("Jump") && canDash && !dashHeld) {
+					// experimental dash
+					isDashing = true;
+					dashTimer = 0.0f;
+					dashHeld = true;
+				}
+			}
+			if (isDashing == true) {
+				dashTimer++;
+				if (dashTimer >= dashTime)
+					isDashing = false;
+			} else if (dashTimer <= dashTime + dashChargeTime)
+				dashTimer++;
 
-        if (dashTimer >= dashTime + dashChargeTime && !Input.GetButton("Jump"))
-            dashHeld = false;
+			if (dashTimer >= dashTime + dashChargeTime && !Input.GetButton ("Jump"))
+				dashHeld = false;
+		}
     }
 
 	public void SetWeapon(GameObject weapon) {
