@@ -25,6 +25,8 @@ public class WeaponSpawnerController : MonoBehaviour {
 
         if (p != null) {
             p.SetWeapon(weapon);    // if collidee is a player, and said player has no weapon
+			if (weaponModel != null)
+				Destroy (weaponModel);
             Destroy(gameObject);
         }
     }

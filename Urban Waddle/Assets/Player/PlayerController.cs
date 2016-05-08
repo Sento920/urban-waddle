@@ -120,6 +120,13 @@ public class PlayerController : MonoBehaviour {
     }
 
 	public void SetWeapon(GameObject weapon) {
+		if (this.weapon != null) {
+			Destroy (this.weapon);
+			this.weapon = null;
+			Destroy (weaponModel);
+			weaponModel = null;
+		}
+
 		this.weapon = Instantiate(weapon);
 		weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
 		weaponModel.transform.parent = holder.transform;
