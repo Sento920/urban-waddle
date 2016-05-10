@@ -142,4 +142,10 @@ public class PlayerController : NetworkBehaviour {
     public GameObject GetWeapon() {
         return weapon;
     }
+
+    public void setCamera(Camera cam)
+    {
+        this.cam = cam;
+    }
+
 }
