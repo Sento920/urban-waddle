@@ -25,6 +25,7 @@ public class PlayerController : NetworkBehaviour {
 	[SyncVar] public GameObject weapon = null;    // why does this need to be a gameobject why does this need to be a gameobject why does this need to be a gameobject
 	public GameObject holder;	// holds the weapon model
 	public GameObject reticle;	// used for projectile origin
+	[SyncVar] private bool modelChanged;
 
 	private GameObject weaponModel = null;	// our held weapon
 
@@ -39,12 +40,18 @@ public class PlayerController : NetworkBehaviour {
         	reticle.SetActive(false);
 
         	//weapon = gameObject.AddComponent<WeaponTest>();
+			modelChanged = false;
 		}
     }
 	
 	// Update is called once per frame
     void Update () {
+		if (modelChanged) {
+			SetWeaponModel ();
+		}
 		if (isLocalPlayer) {
+			
+
 			Vector3 moveDirection = Vector3.zero;
 
 			moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
@@ -129,19 +136,25 @@ public class PlayerController : NetworkBehaviour {
 		if (this.weapon != null) {
 			Destroy (this.weapon);
 			this.weapon = null;
-			Destroy (weaponModel);
-			weaponModel = null;
 		}
-
-		GameObject tmp = Instantiate(weapon);
-        NetworkServer.Spawn(tmp); 
-		this.weapon = tmp;
+		if (weapon != null) {
+			GameObject tmp = Instantiate (weapon);
+			NetworkServer.Spawn (tmp); 
+			this.weapon = tmp;
+		}
+		modelChanged = true;
 	}
 
 	public void SetWeaponModel() {
-		weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
-		weaponModel.transform.parent = holder.transform;
-		reticle.SetActive(true);
+		Destroy (weaponModel);
+		if (weapon != null) {
+			weaponModel = (GameObject)Instantiate (weapon.GetComponent<WeaponBase> ().GetMesh (), holder.transform.position, holder.transform.rotation);
+			weaponModel.transform.parent = holder.transform;
+			reticle.SetActive (true);
+		} else {
+			weaponModel = null;
+			reticle.SetActive (false);
+		}
 	}
 
     public GameObject GetWeapon() {
