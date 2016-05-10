@@ -15,7 +15,6 @@ public class SetUpPlayer : NetworkBehaviour {
             Cam = Instantiate<Camera>(Main);
             GetComponent<PlayerController>().enabled = true;
             GetComponent<PlayerController>().setCamera(Cam);
-            GetComponent<CharacterController>().enabled = true;
             
             print("Enabled Player Controllers.");
         }
