@@ -22,7 +22,7 @@ public class PlayerController : NetworkBehaviour {
     private bool isDashing = false; // me irl :(
     private bool dashHeld = false;  // to prevent holding dash repeatedly dashing
 
-	public GameObject weapon = null;    // why does this need to be a gameobject why does this need to be a gameobject why does this need to be a gameobject
+	[SyncVar] public GameObject weapon = null;    // why does this need to be a gameobject why does this need to be a gameobject why does this need to be a gameobject
 	public GameObject holder;	// holds the weapon model
 	public GameObject reticle;	// used for projectile origin
 
@@ -133,13 +133,15 @@ public class PlayerController : NetworkBehaviour {
 			weaponModel = null;
 		}
 
-		this.weapon = Instantiate(weapon);
-        NetworkServer.Spawn(this.weapon);
-        weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
-        NetworkServer.Spawn(weaponModel);
-        weaponModel.transform.parent = holder.transform;
-        reticle.SetActive(true);
-        
+		GameObject tmp = Instantiate(weapon);
+        NetworkServer.Spawn(tmp); 
+		this.weapon = tmp;
+	}
+
+	public void SetWeaponModel() {
+		weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
+		weaponModel.transform.parent = holder.transform;
+		reticle.SetActive(true);
 	}
 
     public GameObject GetWeapon() {
