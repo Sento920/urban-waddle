@@ -125,7 +125,7 @@ public class PlayerController : NetworkBehaviour {
 		}
     }
 
-	public void SetWeapon(GameObject weapon) {
+	[Command] public void CmdSetWeapon(GameObject weapon) {
 		if (this.weapon != null) {
 			Destroy (this.weapon);
 			this.weapon = null;
@@ -134,9 +134,12 @@ public class PlayerController : NetworkBehaviour {
 		}
 
 		this.weapon = Instantiate(weapon);
-		weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
-		weaponModel.transform.parent = holder.transform;
+        NetworkServer.Spawn(this.weapon);
+        weaponModel = (GameObject)Instantiate(weapon.GetComponent<WeaponBase>().GetMesh(), holder.transform.position, holder.transform.rotation);
+        NetworkServer.Spawn(weaponModel);
+        weaponModel.transform.parent = holder.transform;
         reticle.SetActive(true);
+        
 	}
 
     public GameObject GetWeapon() {

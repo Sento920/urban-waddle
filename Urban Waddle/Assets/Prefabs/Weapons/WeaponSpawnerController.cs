@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
 
-public class WeaponSpawnerController : MonoBehaviour {
+public class WeaponSpawnerController : NetworkBehaviour {
 
     public GameObject weapon;
 
@@ -24,7 +25,7 @@ public class WeaponSpawnerController : MonoBehaviour {
         PlayerController p = other.GetComponent<PlayerController>();
 
         if (p != null) {
-            p.SetWeapon(weapon);    // if collidee is a player, and said player has no weapon
+            p.CmdSetWeapon(weapon);    // if collidee is a player, and said player has no weapon
 			if (weaponModel != null)
 				Destroy (weaponModel);
             Destroy(gameObject);
