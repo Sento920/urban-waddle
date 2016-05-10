@@ -1,0 +1,1671 @@
+fileFormatVersion: 2
+guid: a8e41c1d58542894eb44bec1937eb801
+timeCreated: 1462899507
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Calf_L
+    100004: Calf_R
+    100006: Character1_Ctrl_ChestEndEffector
+    100008: Character1_Ctrl_ChestOriginEffector
+    100010: Character1_Ctrl_Head
+    100012: Character1_Ctrl_HeadEffector
+    100014: Character1_Ctrl_Hips
+    100016: Character1_Ctrl_HipsEffector
+    100018: Character1_Ctrl_LeftAnkleEffector
+    100020: Character1_Ctrl_LeftArm
+    100022: Character1_Ctrl_LeftElbowEffector
+    100024: Character1_Ctrl_LeftFoot
+    100026: Character1_Ctrl_LeftFootEffector
+    100028: Character1_Ctrl_LeftForeArm
+    100030: Character1_Ctrl_LeftHand
+    100032: Character1_Ctrl_LeftHipEffector
+    100034: Character1_Ctrl_LeftKneeEffector
+    100036: Character1_Ctrl_LeftLeg
+    100038: Character1_Ctrl_LeftShoulder
+    100040: Character1_Ctrl_LeftShoulderEffector
+    100042: Character1_Ctrl_LeftToeBase
+    100044: Character1_Ctrl_LeftUpLeg
+    100046: Character1_Ctrl_LeftWristEffector
+    100048: Character1_Ctrl_Neck
+    100050: Character1_Ctrl_Neck1
+    100052: Character1_Ctrl_Reference
+    100054: Character1_Ctrl_RightAnkleEffector
+    100056: Character1_Ctrl_RightArm
+    100058: Character1_Ctrl_RightElbowEffector
+    100060: Character1_Ctrl_RightFoot
+    100062: Character1_Ctrl_RightFootEffector
+    100064: Character1_Ctrl_RightForeArm
+    100066: Character1_Ctrl_RightHand
+    100068: Character1_Ctrl_RightHipEffector
+    100070: Character1_Ctrl_RightKneeEffector
+    100072: Character1_Ctrl_RightLeg
+    100074: Character1_Ctrl_RightShoulder
+    100076: Character1_Ctrl_RightShoulderEffector
+    100078: Character1_Ctrl_RightToeBase
+    100080: Character1_Ctrl_RightUpLeg
+    100082: Character1_Ctrl_RightWristEffector
+    100084: Character1_Ctrl_Spine
+    100086: Character1_Ctrl_Spine1
+    100088: Character1_Ctrl_Spine2
+    100090: Cube_001
+    100092: Foot_L
+    100094: Foot_L_001
+    100096: Foot_L_001_end
+    100098: Foot_R
+    100100: Foot_R_001
+    100102: Foot_R_001_end
+    100104: Hand_L
+    100106: Hand_L_001
+    100108: Hand_L_002
+    100110: Hand_L_003
+    100112: Hand_L_004
+    100114: Hand_L_004_end
+    100116: Hand_L_005
+    100118: Hand_L_006
+    100120: Hand_L_007
+    100122: Hand_L_008
+    100124: Hand_L_008_end
+    100126: Hand_L_009
+    100128: Hand_L_010
+    100130: Hand_L_011
+    100132: Hand_L_012
+    100134: Hand_L_012_end
+    100136: Hand_L_013
+    100138: Hand_L_014
+    100140: Hand_L_015
+    100142: Hand_L_016
+    100144: Hand_L_016_end
+    100146: Hand_L_017
+    100148: Hand_L_018
+    100150: Hand_L_019
+    100152: Hand_L_019_end
+    100154: Hand_R
+    100156: Hand_R_001
+    100158: Hand_R_002
+    100160: Hand_R_003
+    100162: Hand_R_004
+    100164: Hand_R_004_end
+    100166: Hand_R_005
+    100168: Hand_R_006
+    100170: Hand_R_007
+    100172: Hand_R_008
+    100174: Hand_R_008_end
+    100176: Hand_R_009
+    100178: Hand_R_010
+    100180: Hand_R_011
+    100182: Hand_R_012
+    100184: Hand_R_012_end
+    100186: Hand_R_013
+    100188: Hand_R_014
+    100190: Hand_R_015
+    100192: Hand_R_016
+    100194: Hand_R_016_end
+    100196: Hand_R_017
+    100198: Hand_R_018
+    100200: Hand_R_019
+    100202: Hand_R_019_end
+    100204: Head
+    100206: Head_end
+    100208: Hip_L
+    100210: Hip_R
+    100212: LowerArm_L
+    100214: LowerArm_R
+    100216: Neck1
+    100218: Neck2
+    100220: //RootNode
+    100222: Shoulder_L
+    100224: Shoulder_R
+    100226: Spine1
+    100228: Spine2
+    100230: Spine3
+    100232: Spine4
+    100234: Thigh_L
+    100236: Thigh_R
+    100238: UpperArm_L
+    100240: UpperArm_R
+    400000: Armature
+    400002: Calf_L
+    400004: Calf_R
+    400006: Character1_Ctrl_ChestEndEffector
+    400008: Character1_Ctrl_ChestOriginEffector
+    400010: Character1_Ctrl_Head
+    400012: Character1_Ctrl_HeadEffector
+    400014: Character1_Ctrl_Hips
+    400016: Character1_Ctrl_HipsEffector
+    400018: Character1_Ctrl_LeftAnkleEffector
+    400020: Character1_Ctrl_LeftArm
+    400022: Character1_Ctrl_LeftElbowEffector
+    400024: Character1_Ctrl_LeftFoot
+    400026: Character1_Ctrl_LeftFootEffector
+    400028: Character1_Ctrl_LeftForeArm
+    400030: Character1_Ctrl_LeftHand
+    400032: Character1_Ctrl_LeftHipEffector
+    400034: Character1_Ctrl_LeftKneeEffector
+    400036: Character1_Ctrl_LeftLeg
+    400038: Character1_Ctrl_LeftShoulder
+    400040: Character1_Ctrl_LeftShoulderEffector
+    400042: Character1_Ctrl_LeftToeBase
+    400044: Character1_Ctrl_LeftUpLeg
+    400046: Character1_Ctrl_LeftWristEffector
+    400048: Character1_Ctrl_Neck
+    400050: Character1_Ctrl_Neck1
+    400052: Character1_Ctrl_Reference
+    400054: Character1_Ctrl_RightAnkleEffector
+    400056: Character1_Ctrl_RightArm
+    400058: Character1_Ctrl_RightElbowEffector
+    400060: Character1_Ctrl_RightFoot
+    400062: Character1_Ctrl_RightFootEffector
+    400064: Character1_Ctrl_RightForeArm
+    400066: Character1_Ctrl_RightHand
+    400068: Character1_Ctrl_RightHipEffector
+    400070: Character1_Ctrl_RightKneeEffector
+    400072: Character1_Ctrl_RightLeg
+    400074: Character1_Ctrl_RightShoulder
+    400076: Character1_Ctrl_RightShoulderEffector
+    400078: Character1_Ctrl_RightToeBase
+    400080: Character1_Ctrl_RightUpLeg
+    400082: Character1_Ctrl_RightWristEffector
+    400084: Character1_Ctrl_Spine
+    400086: Character1_Ctrl_Spine1
+    400088: Character1_Ctrl_Spine2
+    400090: Cube_001
+    400092: Foot_L
+    400094: Foot_L_001
+    400096: Foot_L_001_end
+    400098: Foot_R
+    400100: Foot_R_001
+    400102: Foot_R_001_end
+    400104: Hand_L
+    400106: Hand_L_001
+    400108: Hand_L_002
+    400110: Hand_L_003
+    400112: Hand_L_004
+    400114: Hand_L_004_end
+    400116: Hand_L_005
+    400118: Hand_L_006
+    400120: Hand_L_007
+    400122: Hand_L_008
+    400124: Hand_L_008_end
+    400126: Hand_L_009
+    400128: Hand_L_010
+    400130: Hand_L_011
+    400132: Hand_L_012
+    400134: Hand_L_012_end
+    400136: Hand_L_013
+    400138: Hand_L_014
+    400140: Hand_L_015
+    400142: Hand_L_016
+    400144: Hand_L_016_end
+    400146: Hand_L_017
+    400148: Hand_L_018
+    400150: Hand_L_019
+    400152: Hand_L_019_end
+    400154: Hand_R
+    400156: Hand_R_001
+    400158: Hand_R_002
+    400160: Hand_R_003
+    400162: Hand_R_004
+    400164: Hand_R_004_end
+    400166: Hand_R_005
+    400168: Hand_R_006
+    400170: Hand_R_007
+    400172: Hand_R_008
+    400174: Hand_R_008_end
+    400176: Hand_R_009
+    400178: Hand_R_010
+    400180: Hand_R_011
+    400182: Hand_R_012
+    400184: Hand_R_012_end
+    400186: Hand_R_013
+    400188: Hand_R_014
+    400190: Hand_R_015
+    400192: Hand_R_016
+    400194: Hand_R_016_end
+    400196: Hand_R_017
+    400198: Hand_R_018
+    400200: Hand_R_019
+    400202: Hand_R_019_end
+    400204: Head
+    400206: Head_end
+    400208: Hip_L
+    400210: Hip_R
+    400212: LowerArm_L
+    400214: LowerArm_R
+    400216: Neck1
+    400218: Neck2
+    400220: //RootNode
+    400222: Shoulder_L
+    400224: Shoulder_R
+    400226: Spine1
+    400228: Spine2
+    400230: Spine3
+    400232: Spine4
+    400234: Thigh_L
+    400236: Thigh_R
+    400238: UpperArm_L
+    400240: UpperArm_R
+    4300000: Cube_001
+    7400000: Default Take
+    7400002: Armature_Take_001_BaseLayer
+    7400004: Walking
+    7400006: Idle
+    7400008: Throw
+    9500000: //RootNode
+    13700000: Cube_001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine1
+        weight: 1
+      - path: Armature/Spine1/Hip_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001/Foot_L_001_end
+        weight: 1
+      - path: Armature/Spine1/Hip_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001/Foot_R_001_end
+        weight: 1
+      - path: Armature/Spine1/Spine2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004/Hand_L_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008/Hand_L_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012/Hand_L_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016/Hand_L_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019/Hand_L_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004/Hand_R_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008/Hand_R_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012/Hand_R_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016/Hand_R_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019/Hand_R_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head/Head_end
+        weight: 1
+      - path: Character1_Ctrl_Reference
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestEndEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestOriginEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HeadEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot/Character1_Ctrl_LeftToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot/Character1_Ctrl_RightToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm/Character1_Ctrl_LeftHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1/Character1_Ctrl_Head
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm/Character1_Ctrl_RightHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HipsEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftWristEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightWristEffector
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Take_001_BaseLayer
+      takeName: Armature_Take_001_BaseLayer
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine1
+        weight: 1
+      - path: Armature/Spine1/Hip_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001/Foot_L_001_end
+        weight: 1
+      - path: Armature/Spine1/Hip_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001/Foot_R_001_end
+        weight: 1
+      - path: Armature/Spine1/Spine2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004/Hand_L_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008/Hand_L_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012/Hand_L_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016/Hand_L_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019/Hand_L_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004/Hand_R_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008/Hand_R_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012/Hand_R_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016/Hand_R_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019/Hand_R_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head/Head_end
+        weight: 1
+      - path: Character1_Ctrl_Reference
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestEndEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestOriginEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HeadEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot/Character1_Ctrl_LeftToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot/Character1_Ctrl_RightToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm/Character1_Ctrl_LeftHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1/Character1_Ctrl_Head
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm/Character1_Ctrl_RightHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HipsEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftWristEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightWristEffector
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walking
+      takeName: Armature_Take_001_BaseLayer_001
+      firstFrame: 1
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine1
+        weight: 1
+      - path: Armature/Spine1/Hip_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001/Foot_L_001_end
+        weight: 1
+      - path: Armature/Spine1/Hip_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001/Foot_R_001_end
+        weight: 1
+      - path: Armature/Spine1/Spine2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004/Hand_L_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008/Hand_L_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012/Hand_L_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016/Hand_L_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019/Hand_L_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004/Hand_R_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008/Hand_R_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012/Hand_R_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016/Hand_R_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019/Hand_R_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head/Head_end
+        weight: 1
+      - path: Character1_Ctrl_Reference
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestEndEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestOriginEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HeadEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot/Character1_Ctrl_LeftToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot/Character1_Ctrl_RightToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm/Character1_Ctrl_LeftHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1/Character1_Ctrl_Head
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm/Character1_Ctrl_RightHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HipsEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftWristEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightWristEffector
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: -1
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine1
+        weight: 1
+      - path: Armature/Spine1/Hip_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001/Foot_L_001_end
+        weight: 1
+      - path: Armature/Spine1/Hip_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001/Foot_R_001_end
+        weight: 1
+      - path: Armature/Spine1/Spine2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004/Hand_L_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008/Hand_L_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012/Hand_L_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016/Hand_L_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019/Hand_L_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004/Hand_R_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008/Hand_R_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012/Hand_R_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016/Hand_R_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019/Hand_R_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head/Head_end
+        weight: 1
+      - path: Character1_Ctrl_Reference
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestEndEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestOriginEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HeadEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot/Character1_Ctrl_LeftToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot/Character1_Ctrl_RightToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm/Character1_Ctrl_LeftHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1/Character1_Ctrl_Head
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm/Character1_Ctrl_RightHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HipsEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftWristEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightWristEffector
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Throw
+      takeName: Throw
+      firstFrame: 0
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Spine1
+        weight: 1
+      - path: Armature/Spine1/Hip_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001
+        weight: 1
+      - path: Armature/Spine1/Hip_L/Thigh_L/Calf_L/Foot_L/Foot_L_001/Foot_L_001_end
+        weight: 1
+      - path: Armature/Spine1/Hip_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001
+        weight: 1
+      - path: Armature/Spine1/Hip_R/Thigh_R/Calf_R/Foot_R/Foot_R_001/Foot_R_001_end
+        weight: 1
+      - path: Armature/Spine1/Spine2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_001/Hand_L_002/Hand_L_003/Hand_L_004/Hand_L_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_005/Hand_L_006/Hand_L_007/Hand_L_008/Hand_L_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_009/Hand_L_010/Hand_L_011/Hand_L_012/Hand_L_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_013/Hand_L_014/Hand_L_015/Hand_L_016/Hand_L_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L/Hand_L_017/Hand_L_018/Hand_L_019/Hand_L_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_001/Hand_R_002/Hand_R_003/Hand_R_004/Hand_R_004_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_005/Hand_R_006/Hand_R_007/Hand_R_008/Hand_R_008_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_009/Hand_R_010/Hand_R_011/Hand_R_012/Hand_R_012_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_013/Hand_R_014/Hand_R_015/Hand_R_016/Hand_R_016_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R/Hand_R_017/Hand_R_018/Hand_R_019/Hand_R_019_end
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head
+        weight: 1
+      - path: Armature/Spine1/Spine2/Spine3/Spine4/Neck1/Neck2/Head/Head_end
+        weight: 1
+      - path: Character1_Ctrl_Reference
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestEndEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_ChestOriginEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HeadEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_LeftUpLeg/Character1_Ctrl_LeftLeg/Character1_Ctrl_LeftFoot/Character1_Ctrl_LeftToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_RightUpLeg/Character1_Ctrl_RightLeg/Character1_Ctrl_RightFoot/Character1_Ctrl_RightToeBase
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_LeftShoulder/Character1_Ctrl_LeftArm/Character1_Ctrl_LeftForeArm/Character1_Ctrl_LeftHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_Neck/Character1_Ctrl_Neck1/Character1_Ctrl_Head
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_Hips/Character1_Ctrl_Spine/Character1_Ctrl_Spine1/Character1_Ctrl_Spine2/Character1_Ctrl_RightShoulder/Character1_Ctrl_RightArm/Character1_Ctrl_RightForeArm/Character1_Ctrl_RightHand
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_HipsEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_LeftWristEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightAnkleEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightElbowEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightFootEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightHipEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightKneeEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightShoulderEffector
+        weight: 1
+      - path: Character1_Ctrl_Reference/Character1_Ctrl_RightWristEffector
+        weight: 1
+      - path: Cube_001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
