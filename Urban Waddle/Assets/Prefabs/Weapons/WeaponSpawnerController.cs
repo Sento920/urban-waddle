@@ -22,13 +22,19 @@ public class WeaponSpawnerController : NetworkBehaviour {
     }
 
 	void OnTriggerEnter(Collider other) {
-        PlayerController p = other.GetComponent<PlayerController>();
+        GameObject p = other.gameObject;
+        if (p != null)
+            CmdgrabWeapon(p);
+    }
 
-        if (p != null) {
+    [Command] void CmdgrabWeapon(GameObject o) { 
+        PlayerController p = o.GetComponent<PlayerController>();
+        if (p != null){
             p.CmdSetWeapon(weapon);    // if collidee is a player, and said player has no weapon
-			if (weaponModel != null)
-				Destroy (weaponModel);
+            if (weaponModel != null)
+                Destroy(weaponModel);
             Destroy(gameObject);
         }
     }
+
 }
