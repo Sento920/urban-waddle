@@ -9,7 +9,7 @@ public class PlayerController : NetworkBehaviour {
 
     CharacterController c;
     public Camera cam;
-
+    public Animator animator;
     public float camHeight = 10.0f;     // height of camera above player
     public float camDistance = 3.0f;    // distance of camera behind player
     public float camDriftFraction = 4.0f;   // camera will move 1/x * aim dist 
@@ -30,13 +30,14 @@ public class PlayerController : NetworkBehaviour {
 	private GameObject weaponModel = null;	// our held weapon
 
     private Vector3 dashDir;    // the last move direction, for dashes and looking
-    private Animator anim;
-    private NetworkAnimator netAnim;
+
+
+    private int walkState;
 
     // Use this for initialization
     void Start () {
-        anim = GetComponent<Animator>();
-        netAnim = GetComponent<NetworkAnimator>();
+
+        
         if (isLocalPlayer) {
        		c = GetComponent<CharacterController>();
         	//cam = GetComponent<Camera>();
@@ -58,16 +59,15 @@ public class PlayerController : NetworkBehaviour {
 
 			Vector3 moveDirection = Vector3.zero;
 
-			moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
-            print(moveDirection.magnitude);
-            
+			moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));            
             if(moveDirection.magnitude != 0.0f)
             {
-                netAnim.animator.SetBool("isWalking", true);
-                ////anim.SetBool("isWalking", true);
-            } else
+                print("should be walking");
+                animator.SetBool("isWalking", true);
+            }
+            else
             {
-                //anim.SetBool("isWalking", false);
+                animator.SetBool("isWalking", false);
             }
 
             // prevent the "Doom diagonal speed boost"
