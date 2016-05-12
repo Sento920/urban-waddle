@@ -30,10 +30,14 @@ public class PlayerController : NetworkBehaviour {
 	private GameObject weaponModel = null;	// our held weapon
 
     private Vector3 dashDir;    // the last move direction, for dashes and looking
+    private Animator anim;
+    private NetworkAnimator netAnim;
 
     // Use this for initialization
     void Start () {
-		if (isLocalPlayer) {
+        anim = GetComponent<Animator>();
+        netAnim = GetComponent<NetworkAnimator>();
+        if (isLocalPlayer) {
        		c = GetComponent<CharacterController>();
         	//cam = GetComponent<Camera>();
         	dashTimer = dashTime;
@@ -55,22 +59,41 @@ public class PlayerController : NetworkBehaviour {
 			Vector3 moveDirection = Vector3.zero;
 
 			moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
+            print(moveDirection.magnitude);
+            
+            if(moveDirection.magnitude != 0.0f)
+            {
+                netAnim.animator.SetBool("isWalking", true);
+                ////anim.SetBool("isWalking", true);
+            } else
+            {
+                //anim.SetBool("isWalking", false);
+            }
 
-			// prevent the "Doom diagonal speed boost"
-			if (moveDirection.magnitude > Vector3.Normalize (moveDirection).magnitude)
-				moveDirection.Normalize ();
+            // prevent the "Doom diagonal speed boost"
+            if (moveDirection.magnitude > Vector3.Normalize(moveDirection).magnitude)
+            {
+                moveDirection.Normalize();
+            }
 
 			moveDirection *= speed;
 
-			if (!isDashing && moveDirection.magnitude != 0.0f)
-				dashDir = Vector3.Normalize (moveDirection);
-			else if (!isDashing)
-				dashDir = transform.forward;
+            if (!isDashing && moveDirection.magnitude != 0.0f)
+            {
+                dashDir = Vector3.Normalize(moveDirection);
+            }
+            else if (!isDashing)
+            {
+                dashDir = transform.forward;
+            }
 
-			if (isDashing)
-				moveDirection = dashDir * dashPower;
-			else
-				moveDirection.y -= gravity;
+            if (isDashing)
+            {
+                moveDirection = dashDir * dashPower;
+            }
+            else {
+                moveDirection.y -= gravity;
+            }
 
 
 			moveDirection *= Time.deltaTime;
@@ -86,10 +109,13 @@ public class PlayerController : NetworkBehaviour {
 
 			Quaternion rotation;
 
-			if (!isDashing)
-				rotation = Quaternion.LookRotation (lookDir - gameObject.transform.position);
-			else
-				rotation = Quaternion.LookRotation (dashDir);
+            if (!isDashing)
+            {
+                rotation = Quaternion.LookRotation(lookDir - gameObject.transform.position);
+            }
+            else {
+                rotation = Quaternion.LookRotation(dashDir);
+            }
 
 			gameObject.transform.rotation = rotation;   // if holding a weapon, take aim
 
