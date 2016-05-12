@@ -128,10 +128,11 @@ public class PlayerController : NetworkBehaviour {
 				weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
 			}
 			if (weapon != null && weapon.GetComponent<WeaponBase> ().isEmpty ()) {
-				Destroy (weapon);
-				Destroy (weaponModel);
-				weapon = null;	// maybe drop the weapon?
-				reticle.SetActive (false);
+                CmdSetWeapon(null);
+                //Destroy (weapon);
+				//Destroy (weaponModel);
+				//weapon = null;	// maybe drop the weapon?
+				//reticle.SetActive (false);
 			}
 		}
     }
