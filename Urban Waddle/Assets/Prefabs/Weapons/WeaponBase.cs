@@ -15,7 +15,7 @@ public interface WeaponBase {
       + Talk to Tyler if you have questions.
     */
     [Command]
-	void CmdFire (Vector3 origin, Vector3 dir);
+	void Fire (Vector3 origin, Vector3 dir);
     GameObject GetMesh();
     string GetWeaponName();
 	bool isEmpty ();
