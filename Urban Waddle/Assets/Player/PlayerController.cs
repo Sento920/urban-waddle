@@ -26,6 +26,7 @@ public class PlayerController : NetworkBehaviour {
 	public GameObject holder;	// holds the weapon model
 	public GameObject reticle;	// used for projectile origin
 	[SyncVar] private bool modelChanged;
+	[SyncVar] bool isFiring;
 
 	private GameObject weaponModel = null;	// our held weapon
 
@@ -125,7 +126,9 @@ public class PlayerController : NetworkBehaviour {
 
 			// weapon stuff
 			if (Input.GetButtonDown ("Fire1") && weapon != null) {
-				weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
+				isFiring = true;
+			} else {
+				isFiring = false;
 			}
 			if (weapon != null && weapon.GetComponent<WeaponBase> ().isEmpty ()) {
                 CmdSetWeapon(null);
@@ -135,6 +138,8 @@ public class PlayerController : NetworkBehaviour {
 				//reticle.SetActive (false);
 			}
 		}
+		if (isFiring)
+		weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
     }
 
     void FixedUpdate () {
