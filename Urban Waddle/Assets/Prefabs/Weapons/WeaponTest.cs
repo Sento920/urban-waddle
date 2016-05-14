@@ -21,7 +21,7 @@ public class WeaponTest : NetworkBehaviour, WeaponBase {
         return mesh;
     }
 
-	public void Fire(Vector3 origin, Vector3 dir) {
+	[Command] public void CmdFire(Vector3 origin, Vector3 dir) {
         GameObject bullet = (GameObject)Instantiate(projectile, origin, Quaternion.LookRotation(dir));
         
         //bullet.GetComponent<ProjectileController>().Fire(dir, speed);

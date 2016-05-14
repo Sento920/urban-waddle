@@ -125,7 +125,7 @@ public class PlayerController : NetworkBehaviour {
 
 			// weapon stuff
 			if (Input.GetButtonDown ("Fire1") && weapon != null) {
-				weapon.GetComponent<WeaponBase> ().Fire (reticle.transform.position, gameObject.transform.forward);
+				weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
 			}
 			if (weapon != null && weapon.GetComponent<WeaponBase> ().isEmpty ()) {
                 CmdSetWeapon(null);
