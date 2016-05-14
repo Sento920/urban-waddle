@@ -21,4 +21,9 @@ public class ProjectileController : NetworkBehaviour {
         this.dir = dir;
         this.speed = speed;
     }
+
+	public void Fire(Vector3 dir, float speed) {
+		this.dir = dir;
+		this.speed = speed;
+	}
 }

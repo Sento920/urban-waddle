@@ -23,10 +23,12 @@ public class WeaponTest : NetworkBehaviour, WeaponBase {
 
 	public void Fire(Vector3 origin, Vector3 dir) {
         GameObject bullet = (GameObject)Instantiate(projectile, origin, Quaternion.LookRotation(dir));
-        NetworkServer.Spawn(bullet);
-        bullet.GetComponent<ProjectileController>().CmdFire(dir, speed);
+        
+        bullet.GetComponent<ProjectileController>().Fire(dir, speed);
         //bullet.GetComponent<Rigidbody>().AddForce(dir * 50.0f);
 		ammo--;
+
+		NetworkServer.Spawn(bullet);
 	}
 
     public string GetWeaponName() {
