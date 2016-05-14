@@ -4,8 +4,8 @@ using UnityEngine.Networking;
 
 public class ProjectileController : NetworkBehaviour {
 
-    private Vector3 dir;
-    private float speed;
+    private Vector3 dir = Vector3.forward;
+	private float speed = 50.0f;
 
     // Use this for initialization
     void Start() {
@@ -14,7 +14,7 @@ public class ProjectileController : NetworkBehaviour {
 
     // Update is called once per frame
     void Update() {
-        transform.position += dir * speed * Time.deltaTime;
+		transform.position += gameObject.transform.forward * speed * Time.deltaTime;
     }
 
     [Command] public void CmdFire(Vector3 dir, float speed) {
