@@ -14,7 +14,7 @@ public interface WeaponBase {
       + * Command Block means the code is run on the server, and thus is put out to clients asap.
       + Talk to Tyler if you have questions.
     */
-    [Command]
+    [ServerCallback]
 	void CmdFire (Vector3 origin, Vector3 dir);
     GameObject GetMesh();
     string GetWeaponName();

@@ -17,13 +17,10 @@ public class ProjectileController : NetworkBehaviour {
 		transform.position += gameObject.transform.forward * speed * Time.deltaTime;
     }
 
+	/*
     [Command] public void CmdFire(Vector3 dir, float speed) {
         this.dir = dir;
         this.speed = speed;
     }
-
-	public void Fire(Vector3 dir, float speed) {
-		this.dir = dir;
-		this.speed = speed;
-	}
+	*/
 }

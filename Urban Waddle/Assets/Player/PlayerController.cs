@@ -63,7 +63,6 @@ public class PlayerController : NetworkBehaviour {
 			moveDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));            
             if(moveDirection.magnitude != 0.0f)
             {
-                print("should be walking");
                 animator.SetBool("isWalking", true);
             }
             else
