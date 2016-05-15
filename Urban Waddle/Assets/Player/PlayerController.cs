@@ -35,6 +35,8 @@ public class PlayerController : NetworkBehaviour {
 
     private int walkState;
 
+	public GameObject projectile;
+
     // Use this for initialization
     void Start () {
 
@@ -137,8 +139,11 @@ public class PlayerController : NetworkBehaviour {
 				//reticle.SetActive (false);
 			}
 		}
-		if (isFiring)
-		weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
+		if (isFiring) {
+			//weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
+			GameObject bullet = (GameObject)Instantiate(projectile, reticle.transform.position, Quaternion.LookRotation(reticle.transform.forward));
+			NetworkServer.Spawn(bullet);
+		}
     }
 
     void FixedUpdate () {
