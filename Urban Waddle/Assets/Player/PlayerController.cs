@@ -128,6 +128,7 @@ public class PlayerController : NetworkBehaviour {
 			// weapon stuff
 			if (Input.GetButtonDown ("Fire1") && weapon != null) {
 				isFiring = true;
+				CmdSHIT ();
 			} else {
 				isFiring = false;
 			}
@@ -141,10 +142,15 @@ public class PlayerController : NetworkBehaviour {
 		}
 		if (isFiring) {
 			//weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
-			GameObject bullet = (GameObject)Instantiate(projectile, reticle.transform.position, Quaternion.LookRotation(reticle.transform.forward));
-			NetworkServer.Spawn(bullet);
+			//GameObject bullet = (GameObject)Instantiate(projectile, reticle.transform.position, Quaternion.LookRotation(reticle.transform.forward));
+			//NetworkServer.Spawn(bullet);
 		}
     }
+
+	[Command] void CmdSHIT() {
+		GameObject bullet = (GameObject)Instantiate(projectile, reticle.transform.position, Quaternion.LookRotation(reticle.transform.forward));
+		NetworkServer.Spawn(bullet);
+	}
 
     void FixedUpdate () {
 		if (isLocalPlayer) {
