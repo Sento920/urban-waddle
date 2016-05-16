@@ -214,7 +214,7 @@ public class PlayerController : NetworkBehaviour {
 	}
 
     [Command] public void CmdDamage() {
-        if (curiFrames > 0) {
+        if (curiFrames < 1) {
             health--;
             curiFrames = iFrames;
         }
