@@ -28,10 +28,14 @@ public class PlayerController : NetworkBehaviour {
 	[SyncVar] private bool modelChanged;
 	[SyncVar] bool isFiring;
 
+    public GameObject playerModel;  // for iframe flashing
+    [SyncVar] public int health = 3;    // number of hits
+    public int iFrames = 120;   // number of iframes
+    [SyncVar] public int curiFrames;
+
 	private GameObject weaponModel = null;	// our held weapon
 
     private Vector3 dashDir;    // the last move direction, for dashes and looking
-
 
     private int walkState;
 
@@ -39,7 +43,7 @@ public class PlayerController : NetworkBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        curiFrames = iFrames;
         
         if (isLocalPlayer) {
        		c = GetComponent<CharacterController>();
@@ -151,7 +155,19 @@ public class PlayerController : NetworkBehaviour {
 	}
 
     void FixedUpdate () {
-		if (isLocalPlayer) {
+        bool meshState = playerModel.GetComponent<SkinnedMeshRenderer>().enabled;   // probably awful code but w/e
+
+        if (curiFrames > 0) {
+            if (curiFrames % 4 == 0)
+                playerModel.GetComponent<SkinnedMeshRenderer>().enabled = !meshState;
+            curiFrames--;
+        }
+        else if (!meshState) {
+            playerModel.GetComponent<SkinnedMeshRenderer>().enabled = true;
+        }
+
+
+        if (isLocalPlayer) {
 			if (c.isGrounded) {
 				if (dashTimer >= dashChargeTime && Input.GetButton ("Jump") && canDash && !dashHeld) {
 					// experimental dash
@@ -197,13 +213,26 @@ public class PlayerController : NetworkBehaviour {
 		}
 	}
 
+    [Command] public void CmdDamage() {
+        if (curiFrames > 0) {
+            health--;
+            curiFrames = iFrames;
+        }
+    }
+
     public GameObject GetWeapon() {
         return weapon;
     }
 
-    public void setCamera(Camera cam)
-    {
+    public void setCamera(Camera cam) {
         this.cam = cam;
     }
 
+    public int GetHealth() {
+        return health;
+    }
+
+    public int GetIFrames() {
+        return curiFrames;
+    }
 }

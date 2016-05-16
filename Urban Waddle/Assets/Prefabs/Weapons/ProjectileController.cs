@@ -17,6 +17,17 @@ public class ProjectileController : NetworkBehaviour {
 		transform.position += gameObject.transform.forward * speed * Time.deltaTime;
     }
 
+    void OnTriggerEnter(Collider other) {
+        PlayerController p = other.GetComponent<PlayerController>();
+        if (p != null && p.GetIFrames() < 1) {
+            p.CmdDamage();
+            Destroy(gameObject);
+        }
+        else {
+            Destroy(gameObject);  // we don't want it exploding on players with iframes!
+        }
+    }
+
 	/*
     [Command] public void CmdFire(Vector3 dir, float speed) {
         this.dir = dir;
