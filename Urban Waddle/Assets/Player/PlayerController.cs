@@ -85,6 +85,8 @@ public class PlayerController : NetworkBehaviour {
 
 			moveDirection *= speed;
 
+            Vector3 horzMove = moveDirection;
+
             if (!isDashing && moveDirection.magnitude != 0.0f)
             {
                 dashDir = Vector3.Normalize(moveDirection);
@@ -124,8 +126,8 @@ public class PlayerController : NetworkBehaviour {
                 rotation = Quaternion.LookRotation(dashDir);
             }
 
-            if (weapon)
-			    gameObject.transform.rotation = rotation;   // if holding a weapon, take aim
+            if (weapon || horzMove.magnitude == 0.0f)
+			    gameObject.transform.rotation = rotation;   // if holding a weapon or standing still, aim
             else
                 gameObject.transform.rotation = Quaternion.LookRotation(dashDir);   // otherwise, look where you're walking.  geez.  kids these days
 
