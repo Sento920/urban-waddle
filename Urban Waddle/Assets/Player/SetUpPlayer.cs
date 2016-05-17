@@ -6,9 +6,13 @@ public class SetUpPlayer : NetworkBehaviour {
 
     [SerializeField]
     private Camera Main;
+	[SerializeField]
+	private GameObject Man;
 
 	// Use this for initialization
 	void Start () {
+		Man = GameObject.Find ("GameManager");
+		Man.GetComponent<GameManager>().AddPlayer(GetComponent<PlayerController>());
         if (isLocalPlayer)
         {
             Camera Cam;
