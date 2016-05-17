@@ -32,6 +32,7 @@ public class PlayerController : NetworkBehaviour {
     [SyncVar] public int health = 3;    // number of hits
     public int iFrames = 120;   // number of iframes
     [SyncVar] public int curiFrames;
+    public GameObject ring; // ring sprite under player
 
 	private GameObject weaponModel = null;	// our held weapon
 
@@ -123,9 +124,12 @@ public class PlayerController : NetworkBehaviour {
                 rotation = Quaternion.LookRotation(dashDir);
             }
 
-			gameObject.transform.rotation = rotation;   // if holding a weapon, take aim
+            if (weapon)
+			    gameObject.transform.rotation = rotation;   // if holding a weapon, take aim
+            else
+                gameObject.transform.rotation = Quaternion.LookRotation(dashDir);   // otherwise, look where you're walking.  geez.  kids these days
 
-			cam.transform.position = gameObject.transform.position + new Vector3 (0.0f, camHeight, -camDistance);
+            cam.transform.position = gameObject.transform.position + new Vector3 (0.0f, camHeight, -camDistance);
 			cam.transform.rotation = Quaternion.LookRotation (c.transform.position - cam.transform.position);
 			cam.transform.position += (1 / camDriftFraction) * (lookDir - gameObject.transform.position);
 
@@ -140,7 +144,10 @@ public class PlayerController : NetworkBehaviour {
 				//weapon = null;	// maybe drop the weapon?
 				//reticle.SetActive (false);
 			}
-		}
+
+            // health stuff
+            ring.transform.rotation = Quaternion.Euler(90.0f, 0.0f, 0.0f);  // fix health ring rotation
+        }
 		if (isFiring) {
 			//weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
 			//GameObject bullet = (GameObject)Instantiate(projectile, reticle.transform.position, Quaternion.LookRotation(reticle.transform.forward));
