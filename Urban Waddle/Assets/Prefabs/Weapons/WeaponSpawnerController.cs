@@ -4,6 +4,8 @@ using UnityEngine.Networking;
 
 public class WeaponSpawnerController : NetworkBehaviour {
 
+    public int respawnTime = 10;
+    [SyncVar] private float respawnTimer = 0;
     public GameObject weapon;
 
 	private GameObject weaponModel;
@@ -18,7 +20,21 @@ public class WeaponSpawnerController : NetworkBehaviour {
 	
 	// Update is called once per frame
     void Update() {
-        
+        if (respawnTimer > 0 && (weaponModel.GetComponent<MeshRenderer>().enabled || gameObject.GetComponent<Collider>().enabled))
+        {
+            weaponModel.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<Collider>().enabled = false;
+        } else if (respawnTimer == 0 && (!weaponModel.GetComponent<MeshRenderer>().enabled || !gameObject.GetComponent<Collider>().enabled))
+        {
+            weaponModel.GetComponent<MeshRenderer>().enabled = true;
+            gameObject.GetComponent<Collider>().enabled = true;
+        }
+        if (respawnTimer != 0 && Time.time > respawnTimer)
+        {
+            weaponModel.GetComponent<MeshRenderer>().enabled = true;
+            gameObject.GetComponent<Collider>().enabled = true;
+            respawnTimer = 0;
+        }
     }
 
 	void OnTriggerEnter(Collider other) {
@@ -32,8 +48,9 @@ public class WeaponSpawnerController : NetworkBehaviour {
         if (p != null){
             p.CmdSetWeapon(weapon);    // if collidee is a player, and said player has no weapon
             if (weaponModel != null)
-                Destroy(weaponModel);
-            Destroy(gameObject);
+                weaponModel.GetComponent<MeshRenderer>().enabled = false;    //Destroy(weaponModel);
+            gameObject.GetComponent<Collider>().enabled = false;
+            respawnTimer = Time.time + respawnTime; //Destroy(gameObject);
         }
     }
 
