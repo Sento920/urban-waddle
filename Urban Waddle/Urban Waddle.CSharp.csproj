@@ -69,13 +69,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Player\PlayerController.cs" />
+    <Compile Include="Assets\Player\PlayerLobbyController.cs" />
     <Compile Include="Assets\Player\SetUpPlayer.cs" />
     <Compile Include="Assets\Prefabs\Weapons\DestroyOnContact.cs" />
     <Compile Include="Assets\Prefabs\Weapons\ProjectileController.cs" />
     <Compile Include="Assets\Prefabs\Weapons\WeaponBase.cs" />
     <Compile Include="Assets\Prefabs\Weapons\WeaponSpawnerController.cs" />
     <Compile Include="Assets\Prefabs\Weapons\WeaponTest.cs" />
+    <Compile Include="Assets\ServerController.cs" />
+    <Compile Include="Assets\TimeLobby.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

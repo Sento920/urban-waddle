@@ -20,7 +20,7 @@ public class SetUpPlayer : NetworkBehaviour {
             GetComponent<PlayerController>().enabled = true;
             GetComponent<PlayerController>().setCamera(Cam);
             
-            print("Enabled Player Controllers.");
+            //print("Enabled Player Controllers.");
         }
 	}
 }

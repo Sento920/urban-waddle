@@ -141,20 +141,11 @@ public class PlayerController : NetworkBehaviour {
 			}
 			if (weapon != null && weapon.GetComponent<WeaponBase> ().isEmpty ()) {
                 CmdSetWeapon(null);
-                //Destroy (weapon);
-				//Destroy (weaponModel);
-				//weapon = null;	// maybe drop the weapon?
-				//reticle.SetActive (false);
 			}
 
-            // health stuff
-            ring.transform.rotation = Quaternion.Euler(90.0f, 0.0f, 0.0f);  // fix health ring rotation
+            
         }
-		if (isFiring) {
-			//weapon.GetComponent<WeaponBase> ().CmdFire (reticle.transform.position, gameObject.transform.forward);
-			//GameObject bullet = (GameObject)Instantiate(projectile, reticle.transform.position, Quaternion.LookRotation(reticle.transform.forward));
-			//NetworkServer.Spawn(bullet);
-		}
+        ring.transform.rotation = Quaternion.Euler(90.0f, 0.0f, 0.0f);  // fix health ring rotation
     }
 
 	[Command] void CmdFireWeapon() {

@@ -23,7 +23,7 @@ public class ProjectileController : NetworkBehaviour {
             p.CmdDamage();
             Destroy(gameObject);
         }
-        else {
+        else if (p == null) {
             Destroy(gameObject);  // we don't want it exploding on players with iframes!
         }
     }
