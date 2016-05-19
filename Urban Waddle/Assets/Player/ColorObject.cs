@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ColorObject : MonoBehaviour {
 
-    public Material[] HealthBar = new Material[4];
+    public Material[] HealthBar = new Material[5];
 
+	void Start () {
+	}
 }
