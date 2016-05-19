@@ -37,7 +37,7 @@ public class PlayerHUDController : MonoBehaviour {
             if (manager.GetComponent<TimeLobby>().winner == 5)
                 endText.GetComponent<UnityEngine.UI.Text>().text = "TIE GAME";
             else
-                endText.GetComponent<UnityEngine.UI.Text>().text = winNames[manager.GetComponent<TimeLobby>().winner] + " WINS";
+                endText.GetComponent<UnityEngine.UI.Text>().text = winNames[manager.GetComponent<TimeLobby>().winner] + " IS THE GREATEST CYBER WARRIOR";
 
             endBG.SetActive(true);
         }
