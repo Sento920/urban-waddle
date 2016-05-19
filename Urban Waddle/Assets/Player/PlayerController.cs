@@ -48,7 +48,7 @@ public class PlayerController : NetworkBehaviour {
 
 
     [SerializeField]
-    public Object[] ColorsArray = new Object[4];
+    public GameObject[] ColorsArray = new GameObject[4];
 
     // Use this for initialization
     void Start () {
@@ -78,7 +78,9 @@ public class PlayerController : NetworkBehaviour {
 			SetWeaponModel ();
 			modelChanged = false;
 		}
-		if (isLocalPlayer) {
+        playerModel.GetComponent<SkinnedMeshRenderer>().material = ColorsArray[color].GetComponent<ColorObject>().HealthBar[0];
+        ring.GetComponent<MeshRenderer>().material = ColorsArray[color].GetComponent<ColorObject>().HealthBar[4-health];
+        if (isLocalPlayer) {
 			
 
 			Vector3 moveDirection = Vector3.zero;
