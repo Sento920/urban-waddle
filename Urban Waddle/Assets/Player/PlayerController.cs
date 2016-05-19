@@ -72,6 +72,7 @@ public class PlayerController : NetworkBehaviour {
 	// Update is called once per frame
     void Update () {
 		if (health < 1) {
+			Destroy (cam);
 			Destroy (gameObject);
 		}
 		if (modelChanged) {
