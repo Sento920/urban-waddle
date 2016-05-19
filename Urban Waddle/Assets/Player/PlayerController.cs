@@ -38,6 +38,8 @@ public class PlayerController : NetworkBehaviour {
 
     private Vector3 dashDir;    // the last move direction, for dashes and looking
 
+	public int color;
+
     private int walkState;
 
 	public GameObject projectile;
@@ -45,6 +47,8 @@ public class PlayerController : NetworkBehaviour {
     // Use this for initialization
     void Start () {
         curiFrames = iFrames;
+
+		//Network.player.
         
         if (isLocalPlayer) {
        		c = GetComponent<CharacterController>();
@@ -61,8 +65,12 @@ public class PlayerController : NetworkBehaviour {
 	
 	// Update is called once per frame
     void Update () {
+		if (health < 1) {
+			Destroy (gameObject);
+		}
 		if (modelChanged) {
 			SetWeaponModel ();
+			modelChanged = false;
 		}
 		if (isLocalPlayer) {
 			
@@ -201,6 +209,8 @@ public class PlayerController : NetworkBehaviour {
 			this.weapon = tmp;
 		}
 		modelChanged = true;
+
+		animator.SetTrigger ("switch");
 	}
 
 	public void SetWeaponModel() {

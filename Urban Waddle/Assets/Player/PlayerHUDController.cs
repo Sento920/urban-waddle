@@ -29,7 +29,7 @@ public class PlayerHUDController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timerText.GetComponent<UnityEngine.UI.Text>().text = string.Format("{0}:{1:D2}", (int)((roundLength - (Network.time - timer)) / 60), (int)((roundLength - (Network.time - timer)) % 60));   // lol let's not even pretend to sync it
-        print(manager.GetComponent<TimeLobby>().isEnd);
+        //print(manager.GetComponent<TimeLobby>().isEnd);
         if (manager.GetComponent<TimeLobby>().isEnd)
         {
             endText.SetActive(true);

@@ -9,6 +9,10 @@ public class TimeLobby : NetworkLobbyManager {
 
     public int winner;
 
+	string[] maps;
+
+	int i = 0;
+
     bool isHost = false;
 
     public override void OnLobbyStartHost() {
@@ -18,6 +22,7 @@ public class TimeLobby : NetworkLobbyManager {
     public override void OnLobbyServerPlayersReady()
     {
         timer = Time.time + 15; // wait 15 seconds to start
+		maps = new string[]{"level1", "Gallery", "TheMaze"};
     }
 
     void Update()
@@ -27,7 +32,10 @@ public class TimeLobby : NetworkLobbyManager {
 
         if (Time.time > timer && isHost)
         {
+			i = (i + 1) % 3;	// cycle the maps
             timer = 0;
+			playScene = maps[i];	// hahahaha no time for map vote
+
             ServerChangeScene(playScene);   // TODO: map vote
             GetComponent<GameManager>().enabled = true;
         }

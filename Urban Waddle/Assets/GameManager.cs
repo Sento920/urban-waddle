@@ -37,8 +37,12 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         if (GetComponent<TimeLobby>() && p.Length != GetComponent<TimeLobby>().numPlayers)
         {
-            print("TEST");
-            p = GameObject.FindObjectsOfType<PlayerController>();
+            p = GameObject.FindObjectsOfType<PlayerController>();	// my finest hack
+
+			for (int i = 0; i < p.Length; i++) {
+				p[i].color = i;
+			}
+
             return;
         }
         if (isPost)
@@ -65,7 +69,7 @@ public class GameManager : MonoBehaviour {
                     }
                 }
 
-                print("PlayersLeft: " + playersLeft + " Winner: " + winner);
+                //print("PlayersLeft: " + playersLeft + " Winner: " + winner);
             }
 
 		    if (GetComponent<TimeLobby>() && (playersLeft < 2 || Network.time > timer + roundLength)) {
