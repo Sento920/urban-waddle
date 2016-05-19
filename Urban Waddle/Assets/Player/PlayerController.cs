@@ -70,7 +70,7 @@ public class PlayerController : NetworkBehaviour {
 		}
 		if (modelChanged) {
 			SetWeaponModel ();
-			modelChanged = false;
+			//modelChanged = false;
 		}
 		if (isLocalPlayer) {
 			
