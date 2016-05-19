@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Player\ColorObject.cs" />
     <Compile Include="Assets\Player\PlayerController.cs" />
     <Compile Include="Assets\Player\PlayerHUDController.cs" />
     <Compile Include="Assets\Player\PlayerLobbyController.cs" />

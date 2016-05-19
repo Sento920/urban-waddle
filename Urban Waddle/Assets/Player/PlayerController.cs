@@ -38,11 +38,17 @@ public class PlayerController : NetworkBehaviour {
 
     private Vector3 dashDir;    // the last move direction, for dashes and looking
 
+    [SyncVar]
 	public int color;
 
     private int walkState;
 
 	public GameObject projectile;
+
+
+
+    [SerializeField]
+    public Object[] ColorsArray = new Object[4];
 
     // Use this for initialization
     void Start () {
@@ -70,7 +76,7 @@ public class PlayerController : NetworkBehaviour {
 		}
 		if (modelChanged) {
 			SetWeaponModel ();
-			//modelChanged = false;
+			modelChanged = false;
 		}
 		if (isLocalPlayer) {
 			
