@@ -76,7 +76,6 @@ public class PlayerController : NetworkBehaviour {
 		}
 		if (modelChanged) {
 			SetWeaponModel ();
-			modelChanged = false;
 		}
         playerModel.GetComponent<SkinnedMeshRenderer>().material = ColorsArray[color].GetComponent<ColorObject>().HealthBar[0];
         ring.GetComponent<MeshRenderer>().material = ColorsArray[color].GetComponent<ColorObject>().HealthBar[4-health];
