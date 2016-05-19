@@ -2,33 +2,98 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class GameManager : NetworkBehaviour {
+public class GameManager : MonoBehaviour {
+    
+    [SerializeField] private float timer;
+    public float roundLength = 120;
+    public float postLength = 10;
+
+    bool isRunning = false;
+    public bool isPost = false; // postgame
 
 	int numPlayers = 0;
 	PlayerController[] p;
 
+    public int winner = 0;
+
 	// Use this for initialization
 	void Start () {
-		p = new PlayerController[8];
+        if (GetComponent<TimeLobby>())
+        {
+            p = new PlayerController[0];
+            //p = GameObject.FindObjectsOfType<PlayerController>();
+
+            /*for (int i = 0; i < GetComponent<TimeLobby>().numPlayers; i++)
+            {
+                //p[i] = Network.connections[i].gameObject.GetComponent<PlayerController>();
+                PlayerController.
+            }*/
+        }
+        //GetComponent<NetworkLobbyManager>().lobbySlots;
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		// see who's alive
-		int playersLeft = 0;
+        if (GetComponent<TimeLobby>() && p.Length != GetComponent<TimeLobby>().numPlayers)
+        {
+            print("TEST");
+            p = GameObject.FindObjectsOfType<PlayerController>();
+            return;
+        }
+        if (isPost)
+        {
+            if (Network.time > timer + postLength)
+            {
+                isPost = false;
+                p = new PlayerController[0];
+                GetComponent<TimeLobby>().ReturnToLobby();
+            }
 
-		for (int i = 0; i < numPlayers; i++) {
-			if (p[i].GetHealth() > 0)
-				playersLeft++;
-		}
+        }
+        else if (isRunning) {
+            //print(p.Length);
+            int playersLeft = 0;
+            if (GetComponent<TimeLobby>())
+            {
+                for (int i = 0; i < p.Length; i++)
+                {
+                    if (p[i].GetHealth() > 0)
+                    {
+                        winner = i;
+                        playersLeft++;
+                    }
+                }
 
-		if (playersLeft < 2) {
-			//print (playersLeft);
-		}
-	}
+                print("PlayersLeft: " + playersLeft + " Winner: " + winner);
+            }
 
-	public void AddPlayer(PlayerController player) {
-		p [numPlayers] = player;
-		numPlayers++;
-	}
+		    if (GetComponent<TimeLobby>() && (playersLeft < 2 || Network.time > timer + roundLength)) {
+                isPost = true;
+                isRunning = false;
+                timer = (float)Network.time;
+                
+                if (playersLeft < 2)
+                    GetComponent<TimeLobby>().EndGame(winner);
+                else
+                    GetComponent<TimeLobby>().EndGame(5);
+            }
+        }
+        else
+        {
+            timer = (float)Network.time;
+            isRunning = true;
+        }
+    }
+
+    public string GetTime()
+    {
+        return string.Format("{0}:{1:D2}", (int)((roundLength - (Network.time - timer)) / 60), (int)((roundLength - (Network.time - timer)) % 60));
+    }
+
+    public void AddPlayer (PlayerController player)
+    {
+        //p[player.GetComponent<NetworkIdentity>().playerControllerId] = player;
+        //p = GameObject.FindObjectsOfType<PlayerController>();
+    }
 }

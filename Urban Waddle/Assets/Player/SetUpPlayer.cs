@@ -6,19 +6,20 @@ public class SetUpPlayer : NetworkBehaviour {
 
     [SerializeField]
     private Camera Main;
-	[SerializeField]
-	private GameObject Man;
+    [SerializeField]
+    private GameObject HUD;
 
 	// Use this for initialization
 	void Start () {
-		Man = GameObject.Find ("GameManager");
-		Man.GetComponent<GameManager>().AddPlayer(GetComponent<PlayerController>());
         if (isLocalPlayer)
         {
             Camera Cam;
             Cam = Instantiate<Camera>(Main);
             GetComponent<PlayerController>().enabled = true;
             GetComponent<PlayerController>().setCamera(Cam);
+
+            // setup ui
+            Instantiate(HUD);
             
             //print("Enabled Player Controllers.");
         }

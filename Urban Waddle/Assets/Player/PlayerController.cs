@@ -55,6 +55,8 @@ public class PlayerController : NetworkBehaviour {
         	//weapon = gameObject.AddComponent<WeaponTest>();
 			modelChanged = false;
 		}
+
+        FindObjectOfType<GameManager>().AddPlayer(this);
     }
 	
 	// Update is called once per frame

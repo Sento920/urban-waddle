@@ -6,13 +6,19 @@ public class PlayerLobbyController : NetworkBehaviour {
 
     public GameObject lobbyUI;
     [SyncVar] public int timeLeft;
-    public GameObject readyUI;
+    [SerializeField] private GameObject readyUI;
     public GameObject readyText;
+
+    [SyncVar] public bool isEnd = false;
+    [SyncVar] public int winner = 0;
+
+    string[] winNames;
 
     // Use this for initialization
     void Start () {
         if (isLocalPlayer)
         {
+            winNames = new string[4] { "RED", "BLUE", "YELLOW", "GREEN" };
             lobbyUI.SetActive(true);
             readyUI.SetActive(true);
         }
@@ -26,9 +32,19 @@ public class PlayerLobbyController : NetworkBehaviour {
             gameObject.GetComponent<NetworkLobbyPlayer>().SendReadyToBeginMessage();
             lobbyUI.SetActive(false);
         }
-        if (isLocalPlayer && timeLeft > 0)
+        if (isLocalPlayer && gameObject.GetComponent<NetworkLobbyPlayer>().readyToBegin && timeLeft > 0)
         {
             readyText.GetComponent<UnityEngine.UI.Text>().text = "GET READY... " + timeLeft;
+        }
+        else if (isLocalPlayer && !gameObject.GetComponent<NetworkLobbyPlayer>().readyToBegin)
+        {
+            readyText.GetComponent<UnityEngine.UI.Text>().text = "WAITING FOR PLAYERS...";
+        }
+        
+        if (isLocalPlayer && !gameObject.GetComponent<NetworkLobbyPlayer>().readyToBegin && (!lobbyUI.activeSelf || !readyUI.activeSelf))
+        {
+            lobbyUI.SetActive(true);
+            readyUI.SetActive(true);
         }
         if (!isLocalPlayer && (lobbyUI.activeSelf || readyUI.activeSelf))
         {
