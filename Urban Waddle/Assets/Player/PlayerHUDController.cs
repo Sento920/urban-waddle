@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerHUDController : MonoBehaviour {
 
-    GameObject manager;
+    TimeLobby manager;
 
     public GameObject timerText;
 
@@ -17,7 +17,11 @@ public class PlayerHUDController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        manager = GameObject.Find("LobbyManager");   // hopefully this works...
+        TimeLobby[] l = GameObject.FindObjectsOfType<TimeLobby>();
+
+        print(l.Length);
+
+        manager = GameObject.FindObjectOfType<TimeLobby>();  // hopefully this works...
 
         winNames = new string[4] { "RED", "BLUE", "YELLOW", "GREEN" };
 
@@ -30,14 +34,14 @@ public class PlayerHUDController : MonoBehaviour {
 	void Update () {
         timerText.GetComponent<UnityEngine.UI.Text>().text = string.Format("{0}:{1:D2}", (int)((roundLength - (Network.time - timer)) / 60), (int)((roundLength - (Network.time - timer)) % 60));   // lol let's not even pretend to sync it
         //print(manager.GetComponent<TimeLobby>().isEnd);
-        if (manager.GetComponent<TimeLobby>().isEnd)
+        if (manager.isEnd)
         {
             endText.SetActive(true);
 
-            if (manager.GetComponent<TimeLobby>().winner == 5)
+            if (manager.winner == 5)
                 endText.GetComponent<UnityEngine.UI.Text>().text = "TIE GAME";
             else
-                endText.GetComponent<UnityEngine.UI.Text>().text = winNames[manager.GetComponent<TimeLobby>().winner] + " IS THE GREATEST CYBER WARRIOR";
+                endText.GetComponent<UnityEngine.UI.Text>().text = winNames[manager.winner] + " IS THE GREATEST CYBER WARRIOR";
 
             endBG.SetActive(true);
         }
