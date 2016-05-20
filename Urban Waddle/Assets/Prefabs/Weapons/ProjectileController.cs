@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 public class ProjectileController : NetworkBehaviour {
 
     private Vector3 dir = Vector3.forward;
-	private float speed = 50.0f;
+	public float speed = 50.0f;
 
     // Use this for initialization
     void Start() {
@@ -23,7 +23,7 @@ public class ProjectileController : NetworkBehaviour {
             p.CmdDamage();
             Destroy(gameObject);
         }
-        else if (p == null) {
+        else if (p == null && other.GetComponent<ProjectileController>() == null) {
             Destroy(gameObject);  // we don't want it exploding on players with iframes!
         }
     }
